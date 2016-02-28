@@ -8,7 +8,7 @@ Base = declarative_base()
 class Person(Base):
 	__tablename__ = 'person'
 	id = Column(Integer, primary_key=True, unique=True)
-	screen_name = Column(String(250), nullable=False)
+	name = Column(String(250), nullable=False)
 	screen_name = Column(String(250), nullable=False)
 	description = Column(String(250), nullable=False)
 	location = Column(String(250), nullable=False)
@@ -17,6 +17,10 @@ class Person(Base):
 	followers_count = Column(Integer, default=0)
 	statuses_count = Column(Integer, default=0)
 	friends_count = Column(Integer, default=0)
+	def GetFields():
+		f = ('id', 'screen_name', 'name', 'description', 'location', 
+			'url', 'followers_count', 'statuses_count', 'friends_count')
+		return f
 	
 
 class Status(Base):
@@ -28,11 +32,11 @@ class Status(Base):
 	retweeted = Column(Boolean, default=False)
 
 	person_id = Column(Integer, ForeignKey('person.id'))
-	person =  relationship('person')
+	person =  relationship(Person)
 
 
 
-engine = create_engine('sqlite:///twittet_app.db')
+engine = create_engine('sqlite:///twittet_app.sqlite')
 
 Base.metadata.create_all(engine)
 
