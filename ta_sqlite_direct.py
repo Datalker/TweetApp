@@ -2,7 +2,7 @@ import tweepy
 import json
 import time
 import sqlite3
-from twitter_credentials import *
+from tweet_credentials import *
 
 
 
