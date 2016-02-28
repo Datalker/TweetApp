@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
+from sqlalchemy import Column, ForeignKey, Integer, String, Boolean, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -27,7 +27,7 @@ class Status(Base):
 	__tablename__ = 'status'
 	id = Column(String(250), primary_key=True, unique=True)
 	text = Column(String(250), nullable=False)
-	created_at = Column(String(250), nullable=False)
+	created_at = Column(DateTime, nullable=False)
 	retweet_count = Column(Integer, default=0)
 	retweeted = Column(Boolean, default=False)
 
