@@ -1,0 +1,58 @@
+name: C:\Users\I071140\Desktop\Private\Declaration\installations\envs\tst2
+dependencies:
+- csvkit=0.9.1=py35_0
+- decorator=4.0.6=py35_0
+- ipykernel=4.2.2=py35_0
+- ipython=4.1.1=py35_0
+- ipython_genutils=0.1.0=py35_0
+- ipywidgets=4.1.1=py35_0
+- jdcal=1.0=py35_0
+- jinja2=2.8=py35_0
+- jpeg=8d=vc14_0
+- jsonschema=2.4.0=py35_0
+- jupyter=1.0.0=py35_1
+- jupyter_client=4.1.1=py35_0
+- jupyter_console=4.1.0=py35_0
+- jupyter_core=4.0.6=py35_0
+- libpng=1.6.17=vc14_1
+- libtiff=4.0.6=vc14_1
+- lxml=3.5.0=py35_0
+- markupsafe=0.23=py35_0
+- mistune=0.7.1=py35_0
+- msvc_runtime=1.0.1=vc14_0
+- nbconvert=4.1.0=py35_0
+- nbformat=4.0.1=py35_0
+- notebook=4.1.0=py35_0
+- openpyxl=2.2.6=py35_0
+- openssl=1.0.2f=vc14_0
+- path.py=8.1.2=py35_1
+- pickleshare=0.5=py35_0
+- pip=8.0.2=py35_0
+- pygments=2.1=py35_0
+- pyqt=4.11.4=py35_4
+- pyreadline=2.1=py35_0
+- python=3.5.1=2
+- python-dateutil=2.4.2=py35_0
+- pyzmq=15.2.0=py35_0
+- qt=4.8.7=vc14_5
+- qtconsole=4.1.1=py35_0
+- setuptools=19.6.2=py35_0
+- simplegeneric=0.8.1=py35_0
+- sip=4.16.9=py35_2
+- six=1.10.0=py35_0
+- sqlalchemy=1.0.11=py35_0
+- tornado=4.3=py35_0
+- traitlets=4.1.0=py35_0
+- wheel=0.29.0=py35_0
+- xlrd=0.9.4=py35_0
+- zlib=1.2.8=vc14_2
+- pip:
+  - ipython-genutils==0.1.0
+  - jupyter-client==4.1.1
+  - jupyter-console==4.1.0
+  - jupyter-core==4.0.6
+  - oauthlib==1.0.3
+  - requests==2.9.1
+  - requests-oauthlib==0.6.0
+  - tweepy==3.5.0
+
